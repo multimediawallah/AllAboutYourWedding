@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#171714">
+<title>Wedding Brief | Client Intake</title>
+<style>
+:root{--ink:#20201c;--muted:#77766e;--paper:#f7f5ef;--card:#fffefa;--line:#e6e2d8;--accent:#a47b4d;--accent2:#d7c3a5;--green:#486b58;--shadow:0 18px 60px rgba(34,30,20,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}
+button,input,textarea,select{font:inherit}button{cursor:pointer}.shell{max-width:980px;margin:auto;padding:28px 20px 80px}.topline{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 0 22px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.19em;text-transform:uppercase;color:var(--muted)}.brand{font-weight:800;color:var(--ink)}.brand span{color:var(--accent)}.hero{padding:58px 0 42px;max-width:760px}.eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:800}.hero h1{font-family:Georgia,serif;font-size:clamp(42px,8vw,76px);line-height:.98;letter-spacing:-.045em;font-weight:500;margin:17px 0}.hero p{font-size:16px;color:var(--muted);max-width:620px}.rule{height:1px;background:var(--line);margin:22px 0 30px}.progress-wrap{position:sticky;top:0;z-index:10;background:rgba(247,245,239,.94);backdrop-filter:blur(12px);padding:13px 0;border-bottom:1px solid var(--line);margin:0 -2px 28px}.progress-meta{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}.progress{height:4px;background:#e7e2d8;border-radius:8px;overflow:hidden}.progress>div{height:100%;width:0;background:var(--accent);transition:width .25s}.section{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:clamp(20px,4vw,34px);margin:18px 0;box-shadow:0 4px 18px rgba(34,30,20,.025)}.section-head{display:flex;gap:16px;align-items:flex-start;margin-bottom:24px}.num{font-family:Georgia,serif;color:var(--accent);font-size:30px;line-height:1}.section h2{font-family:Georgia,serif;font-size:29px;font-weight:500;line-height:1.12;margin:0 0 6px}.section-head p,.hint{color:var(--muted);font-size:13px;margin:0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 16px}.field{min-width:0}.field.full{grid-column:1/-1}label,.legend{display:block;font-size:13px;font-weight:700;margin:0 0 7px}.optional{font-size:10px;color:#928d82;font-weight:500;text-transform:uppercase;letter-spacing:.08em;margin-left:6px}.req{color:#a45b4d}.control{width:100%;border:1px solid #dedacf;border-radius:10px;background:#fff;padding:12px 13px;color:var(--ink);outline:none;transition:border .2s,box-shadow .2s}.control:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(164,123,77,.12)}textarea.control{min-height:96px;resize:vertical}select.control{appearance:auto}.choice-row{display:flex;flex-wrap:wrap;gap:9px}.choice{display:flex;align-items:center;gap:8px;border:1px solid var(--line);padding:9px 12px;border-radius:999px;font-size:13px;background:#fff}.choice input{accent-color:var(--accent)}.check-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.checkline{display:flex;gap:9px;align-items:flex-start;padding:9px 11px;border:1px solid var(--line);border-radius:9px;font-size:13px;background:#fff}.checkline input{margin-top:4px;accent-color:var(--accent)}.subhead{font-family:Georgia,serif;font-size:20px;margin:27px 0 14px;padding-top:20px;border-top:1px solid var(--line);font-weight:500}.event-card{border:1px solid var(--line);border-radius:14px;padding:18px;margin:14px 0;background:#fff}.event-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}.event-top strong{font-family:Georgia,serif;font-size:20px;font-weight:500}.small-btn,.ghost-btn{border:1px solid var(--line);background:#fff;border-radius:9px;padding:9px 12px;color:var(--ink);font-size:12px}.small-btn:hover,.ghost-btn:hover{border-color:var(--accent);color:var(--accent)}.primary{background:var(--ink);color:#fff;border:0;border-radius:999px;padding:14px 23px;font-weight:700;letter-spacing:.03em}.primary:hover{background:#3b3932}.secondary{background:transparent;border:1px solid var(--line);border-radius:999px;padding:13px 20px;color:var(--ink)}.actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:24px}.notice{background:#f3eee4;border:1px solid #e8dece;border-radius:14px;padding:22px;margin:22px 0}.notice h3{font-family:Georgia,serif;font-size:27px;font-weight:500;margin:7px 0}.notice p{color:#68645c;font-size:14px}.notice .promise{font-family:Georgia,serif;font-size:20px;color:var(--green);margin-top:14px}.hidden{display:none!important}.chapter{border-top:1px solid var(--line);padding-top:25px;margin-top:25px}.chapter h3{font-family:Georgia,serif;font-size:23px;font-weight:500;margin:0 0 5px}.chapter>p{color:var(--muted);font-size:13px;margin:0 0 18px}.question-list{display:grid;grid-template-columns:1fr 1fr;gap:17px 16px}.question-list .field:nth-child(odd):last-child{grid-column:1/-1}.section-intro{color:var(--muted);font-size:14px;max-width:700px}.footer{padding:28px 0;text-align:center;color:var(--muted);font-size:11px}.review{background:#f5f2eb;border-radius:12px;padding:18px;white-space:pre-wrap;font:12px/1.6 ui-monospace,SFMono-Regular,monospace;max-height:420px;overflow:auto}.success{border:1px solid #cbd9ce;background:#eff5ef;border-radius:14px;padding:20px;color:#355642}.tiny{font-size:11px;color:var(--muted)}@media(max-width:650px){.shell{padding:18px 13px 55px}.hero{padding:42px 0 28px}.grid,.question-list,.check-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.section{border-radius:14px}.topline{font-size:9px}.section h2{font-size:25px}.actions>*{flex:1}.progress-wrap{margin-bottom:16px}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="topline"><div class="brand">THE <span>WEDDING</span> BRIEF</div><div>Client information · Private & personal</div></div>
+  <header class="hero">
+    <div class="eyebrow">A thoughtful beginning</div>
+    <h1>Let's get every<br>little detail right.</h1>
+    <p>A considered collection of details, stories and personal touches that will help us create wedding stationery that feels unmistakably yours. Please complete the essential information first. If you have selected a wedding newspaper or tabloid, you'll be invited to share a little more of your story.</p>
+    <div class="rule"></div>
+    <p class="tiny">Your responses are used to prepare your wedding stationery and creative brief. Please review names, spellings, dates and venue details carefully before submitting.</p>
+  </header>
+
+  <div class="progress-wrap"><div class="progress-meta"><span>Brief completion</span><span id="progressText">0% completed</span></div><div class="progress"><div id="progressBar"></div></div></div>
+
+  <form id="briefForm">
+    <section class="section">
+      <div class="section-head"><div class="num">01</div><div><h2>Your project</h2><p>Tell us what you have commissioned.</p></div></div>
+      <div class="grid">
+        <div class="field full"><label>What are we creating for you? <span class="req">*</span></label><div class="check-grid">
+          <label class="checkline"><input type="checkbox" name="services" value="Wedding invitation"> Wedding invitation</label>
+          <label class="checkline"><input type="checkbox" name="services" value="Wedding itinerary"> Wedding itinerary</label>
+          <label class="checkline"><input type="checkbox" name="services" value="Wedding newspaper"> Wedding newspaper</label>
+          <label class="checkline"><input type="checkbox" name="services" value="Wedding tabloid"> Wedding tabloid</label>
+          <label class="checkline"><input type="checkbox" name="services" value="Save the Date"> Save the Date</label>
+          <label class="checkline"><input type="checkbox" name="services" value="Welcome board / signage"> Welcome board / signage</label>
+          <label class="checkline"><input type="checkbox" name="services" value="Event stationery"> Event stationery</label>
+          <label class="checkline"><input type="checkbox" name="services" value="Other customised stationery"> Other customised stationery</label>
+        </div></div>
+        <div class="field"><label for="clientName">Your name <span class="req">*</span></label><input class="control" id="clientName" name="clientName" required placeholder="Name of the person filling this form"></div>
+        <div class="field"><label for="clientPhone">Your contact number <span class="req">*</span></label><input class="control" id="clientPhone" name="clientPhone" required type="tel" placeholder="+91 ..."></div>
+        <div class="field"><label for="contactEmail">Email address <span class="optional">Optional</span></label><input class="control" id="contactEmail" name="contactEmail" type="email" placeholder="name@example.com"></div>
+        <div class="field"><label for="weddingDate">Main wedding date <span class="optional">If known</span></label><input class="control" id="weddingDate" name="weddingDate" type="date"></div>
+        <div class="field"><label for="weddingCity">Wedding city / location</label><input class="control" id="weddingCity" name="weddingCity" placeholder="City, state"></div>
+        <div class="field full"><label for="otherService">Anything else you've commissioned?</label><input class="control" id="otherService" name="otherService" placeholder="Please specify"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><div class="num">02</div><div><h2>The couple</h2><p>Please enter names exactly as they should appear in print.</p></div></div>
+      <div class="grid">
+        <div class="field"><label for="bride">Bride's full name <span class="req">*</span></label><input class="control" id="bride" name="bride" required></div>
+        <div class="field"><label for="groom">Groom's full name <span class="req">*</span></label><input class="control" id="groom" name="groom" required></div>
+        <div class="field"><label for="brideDisplay">Bride's preferred display name</label><input class="control" id="brideDisplay" name="brideDisplay" placeholder="If different from full name"></div>
+        <div class="field"><label for="groomDisplay">Groom's preferred display name</label><input class="control" id="groomDisplay" name="groomDisplay" placeholder="If different from full name"></div>
+        <div class="field"><label for="brideNick">Bride's nickname</label><input class="control" id="brideNick" name="brideNick"></div>
+        <div class="field"><label for="groomNick">Groom's nickname</label><input class="control" id="groomNick" name="groomNick"></div>
+        <div class="field"><label for="hashtag">Wedding hashtag</label><input class="control" id="hashtag" name="hashtag" placeholder="#..."></div>
+        <div class="field"><label for="weddingTitle">Wedding title / tagline</label><input class="control" id="weddingTitle" name="weddingTitle" placeholder="If you have one"></div>
+        <div class="field full"><label for="nameNotes">Name spellings, capitalisation, pronunciation or styling notes</label><textarea class="control" id="nameNotes" name="nameNotes" placeholder="Mention exact spellings, initials, titles or names that should / should not be used."></textarea></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><div class="num">03</div><div><h2>Family details</h2><p>Include full names and preferred family references.</p></div></div>
+      <div class="subhead">Bride's family</div>
+      <div class="grid">
+        <div class="field"><label for="brideFather">Bride's father's full name <span class="req">*</span></label><input class="control" id="brideFather" name="brideFather" required></div>
+        <div class="field"><label for="brideMother">Bride's mother's full name <span class="req">*</span></label><input class="control" id="brideMother" name="brideMother" required></div>
+        <div class="field"><label for="bridePGF">Paternal grandfather's full name</label><input class="control" id="bridePGF" name="bridePGF"></div>
+        <div class="field"><label for="bridePGM">Paternal grandmother's full name</label><input class="control" id="bridePGM" name="bridePGM"></div>
+        <div class="field"><label for="brideMGF">Maternal grandfather's full name</label><input class="control" id="brideMGF" name="brideMGF"></div>
+        <div class="field"><label for="brideMGM">Maternal grandmother's full name</label><input class="control" id="brideMGM" name="brideMGM"></div>
+        <div class="field full"><label for="brideOtherFamily">Siblings, relatives or other family members to mention</label><textarea class="control" id="brideOtherFamily" name="brideOtherFamily"></textarea></div>
+        <div class="field full"><label for="brideFamilyRef">How should the bride's family be referred to?</label><input class="control" id="brideFamilyRef" name="brideFamilyRef" placeholder="For example: The Narsaria Family"></div>
+      </div>
+      <div class="subhead">Groom's family</div>
+      <div class="grid">
+        <div class="field"><label for="groomFather">Groom's father's full name <span class="req">*</span></label><input class="control" id="groomFather" name="groomFather" required></div>
+        <div class="field"><label for="groomMother">Groom's mother's full name <span class="req">*</span></label><input class="control" id="groomMother" name="groomMother" required></div>
+        <div class="field"><label for="groomPGF">Paternal grandfather's full name</label><input class="control" id="groomPGF" name="groomPGF"></div>
+        <div class="field"><label for="groomPGM">Paternal grandmother's full name</label><input class="control" id="groomPGM" name="groomPGM"></div>
+        <div class="field"><label for="groomMGF">Maternal grandfather's full name</label><input class="control" id="groomMGF" name="groomMGF"></div>
+        <div class="field"><label for="groomMGM">Maternal grandmother's full name</label><input class="control" id="groomMGM" name="groomMGM"></div>
+        <div class="field full"><label for="groomOtherFamily">Siblings, relatives or other family members to mention</label><textarea class="control" id="groomOtherFamily" name="groomOtherFamily"></textarea></div>
+        <div class="field full"><label for="groomFamilyRef">How should the groom's family be referred to?</label><input class="control" id="groomFamilyRef" name="groomFamilyRef" placeholder="For example: The Chatterjee Family"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><div class="num">04</div><div><h2>Invitation & hosting</h2><p>Who is inviting, hosting and receiving the guests?</p></div></div>
+      <div class="grid">
+        <div class="field full"><label for="hosts">Who is formally inviting the guests?</label><textarea class="control" id="hosts" name="hosts" placeholder="Names and relationship to the couple"></textarea></div>
+        <div class="field"><label for="hostReference">Preferred host / family wording</label><input class="control" id="hostReference" name="hostReference"></div>
+        <div class="field"><label for="honorifics">Honorifics or titles to include</label><input class="control" id="honorifics" name="honorifics" placeholder="Shri, Smt., Dr., Late, etc."></div>
+        <div class="field"><label for="rsvpName">RSVP contact name</label><input class="control" id="rsvpName" name="rsvpName"></div>
+        <div class="field"><label for="rsvpPhone">RSVP phone number</label><input class="control" id="rsvpPhone" name="rsvpPhone" type="tel"></div>
+        <div class="field"><label for="rsvpDeadline">RSVP deadline</label><input class="control" id="rsvpDeadline" name="rsvpDeadline" type="date"></div>
+        <div class="field"><label for="inviteTone">Invitation wording preference</label><select class="control" id="inviteTone" name="inviteTone"><option value="">Select</option><option>Traditional and formal</option><option>Warm and contemporary</option><option>Minimal and elegant</option><option>Poetic and romantic</option><option>Playful and informal</option><option>Let the creative team recommend</option></select></div>
+        <div class="field full"><label for="inviteNotes">Names, details or wording to exclude / special acknowledgement</label><textarea class="control" id="inviteNotes" name="inviteNotes"></textarea></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><div class="num">05</div><div><h2>The celebrations</h2><p>Add every event that needs to appear on your invitation or itinerary. You can add as many events as required.</p></div></div>
+      <div id="events"></div>
+      <button type="button" class="ghost-btn" id="addEvent">＋ Add another event</button>
+      <div class="grid" style="margin-top:22px">
+        <div class="field"><label for="eventGeneral">General itinerary notes</label><textarea class="control" id="eventGeneral" name="eventGeneral" placeholder="Travel guidance, guest instructions, schedule notes, etc."></textarea></div>
+        <div class="field"><label for="mapsGeneral">General Google Maps / travel link</label><textarea class="control" id="mapsGeneral" name="mapsGeneral" placeholder="Paste links if applicable"></textarea></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><div class="num">06</div><div><h2>Overall creative direction</h2><p>Help us understand the visual world of your wedding stationery.</p></div></div>
+      <div class="grid">
+        <div class="field"><label for="palette">Wedding colour palette</label><input class="control" id="palette" name="palette" placeholder="Colours, shades or reference"></div>
+        <div class="field"><label for="theme">Wedding theme / aesthetic</label><input class="control" id="theme" name="theme" placeholder="Royal, modern, garden, minimal, etc."></div>
+        <div class="field"><label for="language">Preferred language</label><select class="control" id="language" name="language"><option value="">Select</option><option>English</option><option>Hindi</option><option>Hinglish</option><option>Bengali</option><option>English + Hindi</option><option>English + Bengali</option><option>Other / multiple languages</option></select></div>
+        <div class="field"><label for="motifs">Preferred motifs / cultural elements</label><input class="control" id="motifs" name="motifs" placeholder="Floral, architectural, religious, regional, etc."></div>
+        <div class="field full"><label for="avoidDesign">Design styles, symbols or elements to avoid</label><textarea class="control" id="avoidDesign" name="avoidDesign"></textarea></div>
+        <div class="field full"><label for="creativeNotes">Any other important creative or cultural instructions?</label><textarea class="control" id="creativeNotes" name="creativeNotes"></textarea></div>
+      </div>
+    </section>
+
+    <div id="newspaperGate" class="section hidden">
+      <div class="section-head"><div class="num">07</div><div><h2>A little more about your story</h2><p>The newspaper / tabloid editorial brief</p></div></div>
+      <div class="notice">
+        <div class="eyebrow">Before we begin</div>
+        <h3>Let's make this truly personal.</h3>
+        <p><strong>Not one question from now onwards is mandatory.</strong> Every question in the Newspaper / Tabloid section is completely optional. Simply fill in as much as you can, in as much detail as you like. Skip anything you don't know, don't wish to share or don't feel is relevant.</p>
+        <p>There are no right or wrong answers. Your responses can be casual, funny, emotional, brief or detailed. Even the smallest anecdote can inspire a wonderful headline or story.</p>
+        <div class="promise">The more you share, the better and more personal your newspaper will be.</div>
+      </div>
+      <div class="actions"><button type="button" class="primary" id="beginNewspaper">Let's begin the newspaper brief →</button></div>
+    </div>
+
+    <div id="newspaperArea" class="hidden">
+      <section class="section">
+        <div class="section-head"><div class="num">08</div><div><h2>Newspaper / tabloid identity</h2><p>Choose the personality and editorial direction of your publication.</p></div></div>
+        <div class="question-list" id="qIdentity"></div>
+      </section>
+      <section class="section">
+        <div class="section-head"><div class="num">09</div><div><h2>The couple's origin story</h2><p>The details behind how the story began.</p></div></div>
+        <div class="question-list" id="qLove"></div>
+      </section>
+      <section class="section">
+        <div class="section-head"><div class="num">10</div><div><h2>The proposal & engagement</h2><p>Milestones, surprises and memorable moments.</p></div></div>
+        <div class="question-list" id="qProposal"></div>
+      </section>
+      <section class="section">
+        <div class="section-head"><div class="num">11</div><div><h2>Meet the bride & groom</h2><p>Two individual personalities, in their own words.</p></div></div>
+        <div class="chapter"><h3>Meet the bride</h3><p>Her personality, passions, quirks and little-known facts.</p><div class="question-list" id="qBride"></div></div>
+        <div class="chapter"><h3>Meet the groom</h3><p>His personality, passions, quirks and little-known facts.</p><div class="question-list" id="qGroom"></div></div>
+      </section>
+      <section class="section">
+        <div class="section-head"><div class="num">12</div><div><h2>The two of you</h2><p>Couple chemistry, habits, friendly disagreements and inside jokes.</p></div></div>
+        <div class="question-list" id="qTogether"></div>
+      </section>
+      <section class="section">
+        <div class="section-head"><div class="num">13</div><div><h2>Families, friends & the entourage</h2><p>The people, traditions and characters who make the celebration special.</p></div></div>
+        <div class="question-list" id="qPeople"></div>
+      </section>
+      <section class="section">
+        <div class="section-head"><div class="num">14</div><div><h2>Event stories & wedding trivia</h2><p>Give each celebration its own personality and collect fun facts for editorial features.</p></div></div>
+        <div class="question-list" id="qEvents"></div>
+      </section>
+      <section class="section">
+        <div class="section-head"><div class="num">15</div><div><h2>Married-life predictions</h2><p>A little harmless fortune-telling for the newlyweds.</p></div></div>
+        <div class="question-list" id="qFuture"></div>
+      </section>
+      <section class="section">
+        <div class="section-head"><div class="num">16</div><div><h2>Editorial content preferences</h2><p>Select the stories, columns and playful newspaper features you'd enjoy.</p></div></div>
+        <div class="grid">
+          <div class="field full"><label>Which sections would you love to see?</label><div class="check-grid" id="contentChoices"></div></div>
+          <div class="field"><label for="editorialFacts">Should the newspaper be strictly factual or allow playful fictionalisation?</label><select class="control" id="editorialFacts" name="editorialFacts"><option value="">Select</option><option>Strictly factual</option><option>Factual with witty presentation</option><option>Playful fictionalised headlines, but no invented facts</option><option>Creative freedom within the boundaries I specify</option></select></div>
+          <div class="field"><label for="humour">Preferred humour level</label><select class="control" id="humour" name="humour"><option value="">Select</option><option>Subtle and tasteful</option><option>Light-hearted and witty</option><option>Quirky and cheeky</option><option>Full tabloid drama (but respectful)</option><option>Keep it mostly emotional / elegant</option></select></div>
+          <div class="field"><label for="voice">Editorial voice</label><select class="control" id="voice" name="voice"><option value="">Select</option><option>Classic newspaper journalism</option><option>Celebrity gossip / tabloid reporting</option><option>Warm first-person storytelling</option><option>Third-person editorial storytelling</option><option>A mix of styles</option></select></div>
+          <div class="field"><label for="headlineStyle">Headline style</label><select class="control" id="headlineStyle" name="headlineStyle"><option value="">Select</option><option>Dramatic breaking news</option><option>Romantic and poetic</option><option>Funny and sensational</option><option>Elegant and understated</option><option>Mix it up across pages</option></select></div>
+          <div class="field full"><label for="sectionsNotes">Specific articles, columns or features you want us to create</label><textarea class="control" id="sectionsNotes" name="sectionsNotes"></textarea></div>
+          <div class="field full"><label for="noGoTopics">Topics, jokes, references or people that must not be mentioned</label><textarea class="control" id="noGoTopics" name="noGoTopics"></textarea></div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section-head"><div class="num">17</div><div><h2>Messages & dedications</h2><p>Words from the couple, parents, family and friends.</p></div></div>
+        <div class="question-list" id="qMessages"></div>
+      </section>
+      <section class="section">
+        <div class="section-head"><div class="num">18</div><div><h2>Photographs & visual assets</h2><p>Share links to folders or albums. You can provide these later too.</p></div></div>
+        <div class="question-list" id="qPhotos"></div>
+      </section>
+      <section class="section">
+        <div class="section-head"><div class="num">19</div><div><h2>Production, privacy & final notes</h2><p>Practical details and permissions for the finished publication.</p></div></div>
+        <div class="grid">
+          <div class="field"><label for="audience">Who will receive the newspaper / tabloid?</label><select class="control" id="audience" name="audience"><option value="">Select</option><option>Close family and friends</option><option>All wedding guests</option><option>Selected guests / VIPs</option><option>Digital circulation</option><option>A combination</option></select></div>
+          <div class="field"><label for="format">Preferred format</label><select class="control" id="format" name="format"><option value="">Select</option><option>Printed newspaper</option><option>Digital newspaper</option><option>Both printed and digital</option><option>Not decided yet</option></select></div>
+          <div class="field"><label for="pages">Approximate number of pages</label><input class="control" id="pages" name="pages" placeholder="If known"></div>
+          <div class="field"><label for="distribution">When will it be distributed?</label><input class="control" id="distribution" name="distribution" placeholder="Before / during which event"></div>
+          <div class="field"><label for="privacy">May we use the finished work in our portfolio / social media?</label><select class="control" id="privacy" name="privacy"><option value="">Select</option><option>Yes, with permission before posting</option><option>Yes, after the wedding</option><option>No, keep it private</option><option>Please discuss with us first</option></select></div>
+          <div class="field"><label for="approval">Who will approve the final content?</label><input class="control" id="approval" name="approval"></div>
+          <div class="field full"><label for="sensitive">Any privacy, family or cultural sensitivities we should respect?</label><textarea class="control" id="sensitive" name="sensitive"></textarea></div>
+          <div class="field full"><label for="finalNotes">Anything else at all that would help us create a remarkable newspaper / tabloid?</label><textarea class="control" id="finalNotes" name="finalNotes" placeholder="This is your space. Tell us anything we haven't asked."></textarea></div>
+        </div>
+      </section>
+    </div>
+
+    <section class="section">
+      <div class="section-head"><div class="num">✓</div><div><h2>Review & submit</h2><p>We'll prepare a concise, organised WhatsApp brief from the information you've provided.</p></div></div>
+      <div class="field"><label class="checkline"><input type="checkbox" id="confirmAccuracy" required> I have reviewed the information and confirm that the details supplied are accurate to the best of my knowledge. <span class="req">*</span></label></div>
+      <p class="tiny" style="margin-top:14px">On submission, WhatsApp will open with your completed brief addressed to our team. Please press Send in WhatsApp to deliver it. The website cannot send the message automatically.</p>
+      <div class="actions"><button class="primary" type="submit">Submit brief via WhatsApp →</button><button class="secondary" type="button" id="previewBtn">Preview WhatsApp message</button><button class="secondary" type="button" id="clearBtn">Clear saved draft</button></div>
+      <div id="previewWrap" class="hidden" style="margin-top:20px"><div class="eyebrow">Message preview</div><div id="preview" class="review"></div></div>
+      <div id="status" aria-live="polite"></div>
+    </section>
+  </form>
+  <div class="footer">THE WEDDING BRIEF · Prepared with care, for your celebration.</div>
+</div>
+<script>
+const $ = s => document.querySelector(s);
+const form = $('#briefForm');
+const STORAGE_KEY = 'weddingBriefDraft_v1';
+let eventCount = 0, newspaperStarted = false;
+
+function addEvent(data={}) {
+  eventCount++;
+  const n=eventCount, wrap=document.createElement('div');
+  wrap.className='event-card'; wrap.dataset.event=n;
+  wrap.innerHTML=`<div class="event-top"><strong>Celebration ${n}</strong><button type="button" class="small-btn remove-event">Remove event</button></div>
+  <div class="grid">
+    <div class="field"><label>Event name <span class="req">*</span></label><input class="control ev-name" required placeholder="e.g. Mehendi, Haldi, Wedding" value="${esc(data.name||'')}"></div>
+    <div class="field"><label>Event date <span class="req">*</span></label><input class="control ev-date" type="date" required value="${esc(data.date||'')}"></div>
+    <div class="field"><label>Starting time <span class="req">*</span></label><input class="control ev-start" type="time" required value="${esc(data.start||'')}"></div>
+    <div class="field"><label>Ending time</label><input class="control ev-end" type="time" value="${esc(data.end||'')}"></div>
+    <div class="field"><label>Venue name <span class="req">*</span></label><input class="control ev-venue" required placeholder="Venue / hotel / residence" value="${esc(data.venue||'')}"></div>
+    <div class="field"><label>Dress code</label><input class="control ev-dress" placeholder="e.g. Pastels, Indian festive" value="${esc(data.dress||'')}"></div>
+    <div class="field full"><label>Complete venue address</label><textarea class="control ev-address" placeholder="Full address">${esc(data.address||'')}</textarea></div>
+    <div class="field"><label>Google Maps link</label><input class="control ev-map" type="url" placeholder="https://maps.app.goo.gl/..." value="${esc(data.map||'')}"></div>
+    <div class="field"><label>Hosted by / which side?</label><input class="control ev-host" placeholder="Bride's side, groom's side, both..." value="${esc(data.host||'')}"></div>
+    <div class="field"><label>Theme / colour palette</label><input class="control ev-theme" value="${esc(data.theme||'')}"></div>
+    <div class="field"><label>Dress code mandatory or suggested?</label><select class="control ev-dresslevel"><option value="">Select</option><option ${data.dresslevel==='Mandatory'?'selected':''}>Mandatory</option><option ${data.dresslevel==='Suggested'?'selected':''}>Suggested</option></select></div>
+    <div class="field full"><label>Guest instructions / special notes</label><textarea class="control ev-notes">${esc(data.notes||'')}</textarea></div>
+  </div>`;
+  $('#events').appendChild(wrap);
+  wrap.querySelector('.remove-event').addEventListener('click',()=>{wrap.remove();renumberEvents();saveDraft();updateProgress()});
+  wrap.addEventListener('input',saveDraft);
+}
+function renumberEvents(){document.querySelectorAll('.event-card').forEach((e,i)=>e.querySelector('strong').textContent='Celebration '+(i+1))}
+function esc(v){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+$('#addEvent').addEventListener('click',()=>{addEvent();saveDraft();updateProgress()});
+addEvent();
+
+const questionSets={
+qIdentity:[
+['newspaperName','What would you like your newspaper / tabloid to be called?','text'],
+['nameHelp','Would you like us to suggest a newspaper title?','select',['Yes, suggest a few options','No, we have a title in mind']],
+['formatStyle','What kind of publication do you imagine?','select',['Traditional Indian newspaper','Vintage broadsheet newspaper','Modern luxury newspaper','Quirky and humorous tabloid','Celebrity gossip tabloid','Royal wedding gazette','A creative fusion']],
+['overallTone','What should the overall tone feel like?','select',['Elegant and sophisticated','Romantic and emotional','Funny and witty','Dramatic and filmy','Quirky and unconventional','Royal and grand','Nostalgic and sentimental','A balanced combination']],
+['languageStyle','Preferred language / language mix','select',['English','Hindi','Hinglish','Bengali','English + Hindi','English + Bengali','Other / multiple languages']],
+['reference','Any newspapers, publications or visual references you admire?','textarea'],
+['styleNotes','What should it absolutely feel like — and what should it not feel like?','textarea']
+],
+qLove:[
+['meetHow','How did you first meet?','textarea'],['meetWhere','Where did you first meet?','text'],['meetWhen','When did you first meet? Approximate month / year is fine.','text'],['firstNotice','Who noticed whom first?','text'],['firstImpression','What was your first impression of each other?','textarea'],['firstTalk','What did you first talk about?','textarea'],['matchType','How did the relationship begin?','select',['Arranged marriage / family introduction','Love marriage','Through mutual friends','Dating app','Work / college','Other']],['matchStory','Tell us how the introduction or match happened.','textarea'],['firstMove','Who initiated the first conversation or made the first move?','text'],['realise','When did you realise there was something special?','textarea'],['firstDate','Tell us about your first date.','textarea'],['firstGift','What was the first gift you exchanged?','text'],['loveFirst','Who said “I love you” first?','text'],['memorable','What is your most memorable relationship moment?','textarea'],['duration','How long have you known each other / been together?','text'],['longDistance','Was there a long-distance phase? Tell us about it.','textarea'],['challenge','What is one challenge you overcame together?','textarea'],['funnyStory','A funny, awkward or embarrassing story from your relationship?','textarea'],['unique','What makes your relationship unique?','textarea'],['movieTitle','If your love story were a film, what would its title be?','text'],['songCouple','Which song, film or fictional couple describes you best?','text'],['threeLines','Describe your love story in three sentences.','textarea']
+],
+qProposal:[
+['proposer','Who proposed?','text'],['proposalWhere','Where did it happen?','text'],['proposalWhen','When did it happen?','text'],['proposalHow','Tell us exactly how the proposal happened.','textarea'],['proposalPlanned','Was it planned or spontaneous?','select',['Carefully planned','Completely spontaneous','A little of both']],['proposalSurprise','Was it a surprise? Who knew beforehand?','textarea'],['proposalReaction','What was the reaction?','textarea'],['proposalRing','Was there a ring or any special detail?','textarea'],['proposalMedia','Do you have proposal / engagement photos or videos?','text'],['familyReaction','How did the families react when the wedding was finalised?','textarea'],['afterEngaged','What was the first thing you did or told your friends after getting engaged?','textarea']
+],
+qBride:[
+['brideFive','Describe the bride in five words.','text'],['brideWork','What does the bride do? Profession / passion / studies.','text'],['brideHobbies','Hobbies and interests','textarea'],['brideFood','Favourite food and drink','text'],['brideScreen','Favourite film, series or song','text'],['brideTravel','Favourite travel destination','text'],['brideType','Morning person or night owl? Introvert or extrovert?','text'],['brideObsession','Biggest obsession','text'],['brideHabit','Most recognisable habit or catchphrase','text'],['brideTease','What do friends constantly tease her about?','textarea'],['bridePetPeeve','Biggest pet peeve','text'],['brideTalent','Unusual talent or little-known fact','textarea'],['brideCannot','One thing she absolutely cannot live without','text'],['bridePerfect','Her idea of a perfect day','textarea'],['brideMisunderstood','What do people often misunderstand about her?','textarea'],['brideProud','Something she is secretly / especially proud of','textarea'],['brideFuture','What is she most looking forward to after marriage?','textarea']
+],
+qGroom:[
+['groomFive','Describe the groom in five words.','text'],['groomWork','What does the groom do? Profession / passion / studies.','text'],['groomHobbies','Hobbies and interests','textarea'],['groomFood','Favourite food and drink','text'],['groomScreen','Favourite film, series or song','text'],['groomTravel','Favourite travel destination','text'],['groomType','Morning person or night owl? Introvert or extrovert?','text'],['groomObsession','Biggest obsession','text'],['groomHabit','Most recognisable habit or catchphrase','text'],['groomTease','What do friends constantly tease him about?','textarea'],['groomPetPeeve','Biggest pet peeve','text'],['groomTalent','Unusual talent or little-known fact','textarea'],['groomCannot','One thing he absolutely cannot live without','text'],['groomPerfect','His idea of a perfect day','textarea'],['groomMisunderstood','What do people often misunderstand about him?','textarea'],['groomProud','Something he is secretly / especially proud of','textarea'],['groomFuture','What is he most looking forward to after marriage?','textarea']
+],
+qTogether:[
+['whoRomantic','Who is more romantic?','text'],['whoDramatic','Who is more dramatic?','text'],['whoOrganised','Who is more organised?','text'],['whoLate','Who is always late?','text'],['whoReady','Who takes longer to get ready?','text'],['whoCook','Who is the better cook?','text'],['whoSpend','Who spends more?','text'],['whoForget','Who forgets important dates / things?','text'],['whoStubborn','Who is more stubborn?','text'],['whoApologise','Who apologises first after an argument?','text'],['whoFoodie','Who is the bigger foodie?','text'],['whoAdventure','Who is more adventurous?','text'],['whoSleep','Who falls asleep first during a movie?','text'],['whoRemote','Who controls the TV remote?','text'],['whoSelfie','Who takes more selfies?','text'],['whoFunny','Who is funnier?','text'],['whoSpoil','Who spoils the other more?','text'],['favouriteTogether','Favourite activity / memory / holiday together','textarea'],['favouriteAbout','What is your favourite thing about each other?','textarea'],['drivesCrazy','What is one habit of your partner that drives you crazy?','textarea'],['insideJoke','Favourite inside joke or frequently used phrase','textarea'],['partnerHeadline','If your partner had a personal newspaper headline, what would it say?','textarea'],['coupleMotto','Your couple motto / one word for your future','text']
+],
+qPeople:[
+['brideFamilyDescribe','Describe the bride’s family in a few words.','textarea'],['groomFamilyDescribe','Describe the groom’s family in a few words.','textarea'],['familyTraditions','Any special family traditions or rituals?','textarea'],['familyLegacy','Any family legacy, business, profession or story worth mentioning?','textarea'],['familiesTogether','How did the two families come together? Any memorable story?','textarea'],['mostExcited','Who was most excited when the wedding was announced?','text'],['familyEmotional','Who is the most emotional family member?','text'],['familyEntertainer','Who is the biggest entertainer / dancer in the family?','text'],['familyCharacter','Who is the family foodie, photographer or party-starter?','textarea'],['familySpecial','Anyone who deserves a special mention or tribute?','textarea'],['grandparentsTribute','Would you like to honour grandparents or loved ones who are no longer with us? Tell us how.','textarea'],['friendsNames','Names / nicknames of close friends, bridesmaids, groomsmen or best people','textarea'],['friendsStories','Funny stories, nicknames or inside jokes involving the friends’ group','textarea'],['friendAwards','Who is most likely to be the dance-floor starter, late arrival, emotional one or party animal?','textarea']
+],
+qEvents:[
+['eventSignificance','Is there a special story or significance behind any wedding event?','textarea'],['eventAtmosphere','What atmosphere should each celebration have?','textarea'],['eventHighlights','Any performances, rituals, surprises, games or special activities?','textarea'],['eventPerformers','Who is performing or making a special appearance?','textarea'],['eventFood','Any signature dishes, food counters or drinks worth highlighting?','textarea'],['eventTagline','Any event-specific hashtag, tagline or phrase?','textarea'],['eventHeadlines','Any headline ideas or event details you especially want highlighted?','textarea'],['combinedAge','What are the couple’s ages / combined age, if you want this used?','text'],['travelCount','How many cities have you travelled to together?','text'],['sharedSong','Favourite shared song / restaurant / food / destination','textarea'],['agreeDisagree','One thing you always agree on and one thing you never agree on','textarea'],['dreamTrip','Dream destination together','text'],['bestDate','Most memorable date','textarea'],['coupleTrivia','Any surprising couple trivia or fun facts?','textarea']
+],
+qFuture:[
+['finance','Who will manage the household finances?','text'],['foodDecision','Who will decide what to eat?','text'],['wardrobe','Who will take up more wardrobe space?','text'],['holidayPlanner','Who will plan the holidays?','text'],['morningPerson','Who will wake up first?','text'],['strictOne','Who will be the strict one?','text'],['spoilKids','Who might spoil the children more? (Entirely optional.)','text'],['marriedLife','What do you predict married life will be like?','textarea'],['anniversary','Dream first-anniversary celebration','textarea'],['firstTrip','First trip you want to take as a married couple','text'],['fiveYears','One dream or goal for the next five years','textarea'],['marriedPrediction','Make one funny prediction about your married life.','textarea']
+],
+qMessages:[
+['brideMessage','A message from the bride','textarea'],['groomMessage','A message from the groom','textarea'],['jointMessage','A joint message from the couple to guests','textarea'],['parentsMessage','A message / quote from either set of parents','textarea'],['grandparentsMessage','A blessing or message from grandparents','textarea'],['tributeMessage','Would you like to acknowledge someone who cannot attend or dedicate a tribute to a loved one?','textarea'],['guestMessage','A thank-you message to your guests','textarea'],['quoteMessage','A favourite quote, blessing, poem or line you want included','textarea']
+],
+qPhotos:[
+['driveLink','Google Drive folder link','url'],['photosLink','Google Photos / shared album link','url'],['couplePhotos','Do you have professional couple photographs? Describe / link them.','textarea'],['childhoodPhotos','Do you have childhood photographs of the bride and groom?','textarea'],['earlyPhotos','Do you have early relationship, first-date or proposal photographs?','textarea'],['familyPhotos','Do you have photographs with both families and friends?','textarea'],['funnyPhotos','Any funny / candid photographs you are comfortable sharing?','textarea'],['preWedding','Pre-wedding shoot or previous celebration photographs','textarea'],['visualAssets','Wedding logo, monogram, illustrations or existing visual assets','textarea'],['mustUse','Photographs / people / moments that must definitely be included','textarea'],['mustAvoid','Photographs or people that must not be included','textarea']
+]
+};
+
+function renderQuestions(id, arr){
+  const root=document.getElementById(id);
+  arr.forEach(([name,label,type,opts])=>{
+    const f=document.createElement('div');f.className='field';
+    let control='';
+    if(type==='textarea') control=`<textarea class="control" name="${name}" placeholder="Share as much or as little as you like"></textarea>`;
+    else if(type==='select') control=`<select class="control" name="${name}"><option value="">Select (optional)</option>${opts.map(o=>`<option>${esc(o)}</option>`).join('')}</select>`;
+    else control=`<input class="control" name="${name}" type="${type}" placeholder="${type==='url'?'https://...':'Your answer (optional)'}">`;
+    f.innerHTML=`<label for="${name}">${esc(label)} <span class="optional">Optional</span></label>${control}`;
+    root.appendChild(f);
+  });
+}
+Object.entries(questionSets).forEach(([id,arr])=>renderQuestions(id,arr));
+const contentItems=['Main wedding headline / breaking news','Couple’s love story','Bride’s personality profile','Groom’s personality profile','Couple compatibility report','Family introductions','Friends’ gossip column','Wedding event schedule','Wedding countdown','Engagement announcement','Proposal story','Funny relationship anecdotes','Couple trivia / quiz','Future predictions','Wedding horoscope','Celebrity-style interview','Mock breaking-news reports','Wedding weather forecast','Wedding stock market','Classified advertisements','Fake advertisements featuring the couple','Crossword / word search / puzzles','Guest messages and wishes','Special family tribute','Thank-you editorial'];
+$('#contentChoices').innerHTML=contentItems.map(x=>`<label class="checkline"><input type="checkbox" name="contentChoices" value="${esc(x)}"> ${esc(x)}</label>`).join('');
+
+function showNewspaperGate(){
+ const wants=[...document.querySelectorAll('input[name="services"]:checked')].some(x=>/newspaper|tabloid/i.test(x.value));
+ $('#newspaperGate').classList.toggle('hidden',!wants);
+ if(!wants){$('#newspaperArea').classList.add('hidden');newspaperStarted=false}
+}
+document.querySelectorAll('input[name="services"]').forEach(x=>x.addEventListener('change',()=>{showNewspaperGate();saveDraft();updateProgress()}));
+$('#beginNewspaper').addEventListener('click',()=>{newspaperStarted=true;$('#newspaperArea').classList.remove('hidden');$('#newspaperArea').scrollIntoView({behavior:'smooth'});updateProgress();saveDraft()});
+
+function getEvents(){
+ return [...document.querySelectorAll('.event-card')].map(e=>({
+ name:e.querySelector('.ev-name').value,date:e.querySelector('.ev-date').value,start:e.querySelector('.ev-start').value,end:e.querySelector('.ev-end').value,venue:e.querySelector('.ev-venue').value,dress:e.querySelector('.ev-dress').value,address:e.querySelector('.ev-address').value,map:e.querySelector('.ev-map').value,host:e.querySelector('.ev-host').value,theme:e.querySelector('.ev-theme').value,dresslevel:e.querySelector('.ev-dresslevel').value,notes:e.querySelector('.ev-notes').value
+ }));
+}
+function collect(){
+ const out={};
+ new FormData(form).forEach((v,k)=>{if(k==='services'||k==='contentChoices'){(out[k]??=[]).push(v)}else if(v.trim())out[k]=v.trim()});
+ out.events=getEvents().filter(e=>Object.values(e).some(v=>String(v||'').trim()));
+ out.newspaperIncluded=!$('#newspaperArea').classList.contains('hidden');
+ return out;
+}
+function labelFor(name){const el=form.querySelector(`[name="${CSS.escape(name)}"]`);if(!el)return name;const l=el.closest('.field')?.querySelector('label');return l?l.innerText.replace('Optional','').trim():name}
+function prettyDate(v){if(!v)return '';const d=new Date(v+'T00:00:00');return d.toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})}
+function buildMessage(){
+ const d=collect(), lines=[];
+ const add=(h)=>lines.push('\n*'+h.toUpperCase()+'*');
+ const put=(label,val)=>{if(val&&(!Array.isArray(val)||val.length))lines.push('*'+label+':* '+(Array.isArray(val)?val.join(', '):val))};
+ lines.push('*NEW WEDDING PROJECT — CLIENT BRIEF*');
+ put('Client',d.clientName);put('Contact',d.clientPhone);put('Email',d.contactEmail);
+ add('Project');put('Services selected',d.services);put('Wedding date',prettyDate(d.weddingDate));put('Wedding location',d.weddingCity);put('Other requirements',d.otherService);
+ add('The couple');put('Bride',d.bride);put('Groom',d.groom);put('Bride display name',d.brideDisplay);put('Groom display name',d.groomDisplay);put('Bride nickname',d.brideNick);put('Groom nickname',d.groomNick);put('Hashtag',d.hashtag);put('Wedding title',d.weddingTitle);put('Name / spelling notes',d.nameNotes);
+ add("Bride's family");put("Father",d.brideFather);put("Mother",d.brideMother);put("Paternal grandfather",d.bridePGF);put("Paternal grandmother",d.bridePGM);put("Maternal grandfather",d.brideMGF);put("Maternal grandmother",d.brideMGM);put("Other family",d.brideOtherFamily);put("Family reference",d.brideFamilyRef);
+ add("Groom's family");put("Father",d.groomFather);put("Mother",d.groomMother);put("Paternal grandfather",d.groomPGF);put("Paternal grandmother",d.groomPGM);put("Maternal grandfather",d.groomMGF);put("Maternal grandmother",d.groomMGM);put("Other family",d.groomOtherFamily);put("Family reference",d.groomFamilyRef);
+ add('Invitation & hosting');[['Invited by',d.hosts],['Host wording',d.hostReference],['Honorifics',d.honorifics],['RSVP contact',d.rsvpName],['RSVP number',d.rsvpPhone],['RSVP deadline',prettyDate(d.rsvpDeadline)],['Wording preference',d.inviteTone],['Special instructions',d.inviteNotes]].forEach(x=>put(...x));
+ add('Event itinerary');
+ d.events.forEach((e,i)=>{lines.push('\n*'+(i+1)+'. '+(e.name||'EVENT').toUpperCase()+'*');put('Date',prettyDate(e.date));put('Time',[e.start,e.end].filter(Boolean).join(' – '));put('Venue',e.venue);put('Address',e.address);put('Maps',e.map);put('Dress code',e.dress);put('Dress code status',e.dresslevel);put('Hosted by',e.host);put('Theme',e.theme);put('Guest notes',e.notes)});
+ put('General itinerary notes',d.eventGeneral);put('General maps / travel link',d.mapsGeneral);
+ add('Creative direction');[['Palette',d.palette],['Theme',d.theme],['Language',d.language],['Motifs',d.motifs],['Avoid',d.avoidDesign],['Creative notes',d.creativeNotes]].forEach(x=>put(...x));
+ if(d.newspaperIncluded){
+  add('NEWSPAPER / TABLOID EDITORIAL BRIEF');
+  const groups=[['Identity',['newspaperName','nameHelp','formatStyle','overallTone','languageStyle','reference','styleNotes']],['Love story',['meetHow','meetWhere','meetWhen','firstNotice','firstImpression','firstTalk','matchType','matchStory','firstMove','realise','firstDate','firstGift','loveFirst','memorable','duration','longDistance','challenge','funnyStory','unique','movieTitle','songCouple','threeLines']],['Proposal & engagement',['proposer','proposalWhere','proposalWhen','proposalHow','proposalPlanned','proposalSurprise','proposalReaction','proposalRing','proposalMedia','familyReaction','afterEngaged']],['Bride profile',questionSets.qBride.map(x=>x[0])],['Groom profile',questionSets.qGroom.map(x=>x[0])],['The couple',questionSets.qTogether.map(x=>x[0])],['Families & friends',questionSets.qPeople.map(x=>x[0])],['Events & trivia',questionSets.qEvents.map(x=>x[0])],['Married-life predictions',questionSets.qFuture.map(x=>x[0])],['Messages & dedications',questionSets.qMessages.map(x=>x[0])],['Photographs & visual assets',questionSets.qPhotos.map(x=>x[0])]];
+  const allLabels={};Object.values(questionSets).flat().forEach(q=>allLabels[q[0]]=q[1]);
+  const extraLabels={newspaperName:'Newspaper / tabloid name',nameHelp:'Suggest a name?',formatStyle:'Publication style',overallTone:'Overall tone',languageStyle:'Language',reference:'Creative references',styleNotes:'Desired feel / avoid',editorialFacts:'Factual / fictionalised approach',humour:'Humour level',voice:'Editorial voice',headlineStyle:'Headline style',sectionsNotes:'Requested features',noGoTopics:'Topics to avoid',driveLink:'Google Drive folder',photosLink:'Google Photos album',audience:'Audience',format:'Format',pages:'Approximate pages',distribution:'Distribution timing',privacy:'Portfolio permission',approval:'Final content approver',sensitive:'Privacy / cultural sensitivities',finalNotes:'Additional notes'};
+  groups.forEach(([title,keys])=>{add(title);keys.forEach(k=>put(allLabels[k]||extraLabels[k]||k,d[k]))});
+  add('Editorial preferences');[['Sections selected',(d.contentChoices||[])],['Factual / creative approach',d.editorialFacts],['Humour',d.humour],['Voice',d.voice],['Headline style',d.headlineStyle],['Requested features',d.sectionsNotes],['Topics to avoid',d.noGoTopics]].forEach(x=>put(...x));
+  add('Production & privacy');[['Audience',d.audience],['Format',d.format],['Pages',d.pages],['Distribution',d.distribution],['Portfolio permission',d.privacy],['Approver',d.approval],['Sensitivities',d.sensitive],['Final notes',d.finalNotes]].forEach(x=>put(...x));
+ }
+ lines.push('\n_This brief was submitted through the Wedding Brief form._');
+ return lines.join('\n');
+}
+function saveDraft(){
+ try{localStorage.setItem(STORAGE_KEY,JSON.stringify({values:Object.fromEntries(new FormData(form)),events:getEvents(),newspaperStarted,services:[...document.querySelectorAll('input[name="services"]:checked')].map(x=>x.value),contentChoices:[...document.querySelectorAll('input[name="contentChoices"]:checked')].map(x=>x.value)}))}catch(e){}
+}
+function updateProgress(){
+ const fields=[...form.querySelectorAll('input:not([type=checkbox]):not([type=hidden]),textarea,select')].filter(x=>x.type!=='submit');
+ const filled=fields.filter(x=>x.value.trim()).length;
+ const pct=Math.round(filled/Math.max(fields.length,1)*100);
+ $('#progressBar').style.width=pct+'%';$('#progressText').textContent=pct+'% completed';
+}
+form.addEventListener('input',()=>{saveDraft();updateProgress()});
+form.addEventListener('change',()=>{saveDraft();updateProgress()});
+$('#previewBtn').addEventListener('click',()=>{$('#preview').textContent=buildMessage();$('#previewWrap').classList.remove('hidden');$('#previewWrap').scrollIntoView({behavior:'smooth',block:'nearest'})});
+form.addEventListener('submit',e=>{
+ e.preventDefault();
+ if(!form.reportValidity())return;
+ if(!document.querySelector('input[name="services"]:checked')){alert('Please select at least one project type.');return}
+ const message=buildMessage();
+ const url='https://wa.me/918910264234?text='+encodeURIComponent(message);
+ $('#status').innerHTML='<div class="success"><strong>Your brief is ready.</strong><br>WhatsApp will open with the complete message. Please press Send there to deliver it to our team.</div>';
+ window.open(url,'_blank','noopener');
+});
+$('#clearBtn').addEventListener('click',()=>{if(confirm('Clear the saved draft on this device? This will reset all entered information.')){localStorage.removeItem(STORAGE_KEY);location.reload()}});
+function restoreDraft(){
+ try{
+ const raw=localStorage.getItem(STORAGE_KEY);if(!raw)return;
+ const d=JSON.parse(raw);
+ Object.entries(d.values||{}).forEach(([k,v])=>{const el=form.elements.namedItem(k);if(el&&typeof v==='string')el.value=v});
+ document.querySelectorAll('input[name="services"]').forEach(x=>x.checked=(d.services||[]).includes(x.value));
+ document.querySelectorAll('input[name="contentChoices"]').forEach(x=>x.checked=(d.contentChoices||[]).includes(x.value));
+ $('#events').innerHTML='';eventCount=0;(d.events?.length?d.events:[{}]).forEach(addEvent);
+ showNewspaperGate();
+ if(d.newspaperStarted&&![...document.querySelectorAll('input[name="services"]:checked')].some(x=>/newspaper|tabloid/i.test(x.value))){newspaperStarted=true;$('#newspaperArea').classList.remove('hidden')}
+ else if(d.newspaperStarted){newspaperStarted=true;$('#newspaperArea').classList.remove('hidden')}
+ updateProgress();
+ }catch(e){console.warn('Could not restore draft',e)}
+}
+restoreDraft();showNewspaperGate();updateProgress();
+</script>
+</body>
+</html>
